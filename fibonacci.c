@@ -32,12 +32,22 @@ int sumSeries(int a[],n){
 return sum-1;
  
 }
+
+ int getOddNumbers(int* arr[],int j){
+ for(int a=0;a<j;a++){
+     if(arr[a]%2!=0){
+        printf("%d",arr[a]);
+     }
+ }
+return 0;
+}
 int main() {
     int i=4;
      int *arr1;
     arr1=generateFibonacciSeries(i);
      getEvenNumbers(arr1,i);
 	int sum=sumSeries(arr1,i);
+     getOddNumbers(arr1,i);
      
 }
  
