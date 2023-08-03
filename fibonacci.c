@@ -24,9 +24,20 @@ int* generateFibonacciSeries(int n){
  }
 return 0;
 }
+int sumSeries(int a[],n){
+	int sum=0;
+	for(int i=0;i<n;i++){
+		sum+=a[i];
+	}
+return sum-1;
+ 
+}
 int main() {
     int i=4;
      int *arr1;
     arr1=generateFibonacciSeries(i);
      getEvenNumbers(arr1,i);
+	int sum=sumSeries(arr1,i);
+     
 }
+ 
