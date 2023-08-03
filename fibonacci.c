@@ -41,6 +41,10 @@ return sum;
  }
 return 0;
 }
+int nthElement(int arr1[],int j){
+return arr1[j-1];
+}
+
 int main() {
     int i=4;
      int *arr1;
@@ -48,6 +52,9 @@ int main() {
      getEvenNumbers(arr1,i);
 	int sum=sumSeries(arr1,i);
      getOddNumbers(arr1,i);
+	int n;
+	scanf("%d",&n);
+	nthElement(arr1,n);
      
 }
  
