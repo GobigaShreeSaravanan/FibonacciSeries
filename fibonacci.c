@@ -44,6 +44,9 @@ return 0;
 int nthElement(int arr1[],int j){
 return arr1[j-1];
 }
+int getMaxValue(int arr1[],int j){
+return arr1[j-1];
+}
 
 int main() {
     int i=4;
@@ -55,6 +58,7 @@ int main() {
 	int n;
 	scanf("%d",&n);
 	nthElement(arr1,n);
+	getMaxValue(arr1,i);
      
 }
  
