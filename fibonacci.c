@@ -7,7 +7,7 @@ int* generateFibonacciSeries(int n){
    arr[0]=t1;
    arr[1]=t2;
    arr[2]=nextTerm;
-  for (i = 3; i <= n; ++i) {
+  for (i = 3; i <= n+1; ++i) {
     t1 = t2;
     t2 = nextTerm;
     nextTerm = t1 + t2;
@@ -26,7 +26,7 @@ return 0;
 }
 int sumSeries(int a[],n){
 	int sum=0;
-	for(int i=0;i<n-1;i++){
+	for(int i=0;i<n+1;i++){
 		sum+=a[i];
 	}
 return sum;
