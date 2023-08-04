@@ -7,7 +7,7 @@ int* generateFibonacciSeries(int n){
    arr[0]=t1;
    arr[1]=t2;
    arr[2]=nextTerm;
-  for (i = 3; i <= n; ++i) {
+  for (i = 3; i <= n+1; ++i) {
     t1 = t2;
     t2 = nextTerm;
     nextTerm = t1 + t2;
@@ -26,7 +26,7 @@ return 0;
 }
 int sumSeries(int a[],n){
 	int sum=0;
-	for(int i=0;i<n-1;i++){
+	for(int i=0;i<n+1;i++){
 		sum+=a[i];
 	}
 return sum;
@@ -44,6 +44,9 @@ return 0;
 int nthElement(int arr1[],int j){
 return arr1[j-1];
 }
+int getMaxValue(int arr1[],int j){
+return arr1[j-1];
+}
 
 int main() {
     int i=4;
@@ -55,6 +58,7 @@ int main() {
 	int n;
 	scanf("%d",&n);
 	nthElement(arr1,n);
+	getMaxValue(arr1,i);
      
 }
  
