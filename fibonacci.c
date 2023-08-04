@@ -26,7 +26,7 @@ return 0;
 }
 int sumSeries(int a[],n){
 	int sum=0;
-	for(int i=0;i<n+1;i++){
+	for(int i=0;i<n;i++){
 		sum+=a[i];
 	}
 return sum;
